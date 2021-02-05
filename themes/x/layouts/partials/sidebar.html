@@ -1,0 +1,19 @@
+<aside>
+	<div class="widget">
+		{{ partial "related-posts.html" . }}
+	</div>
+	<div class="widget">
+		<div class="text-center bg-success">
+			<h5 class="card-header mb-1 text-light">Catégorie</h5>
+		</div>
+		<ul>
+			{{ range site.Params.mainSections }}
+				<li>
+					<a href="/{{ . | singularize | lower }}">
+						<span>{{ . | singularize | title }}</span>
+					</a>
+				</li>
+			{{ end }}
+		</ul>
+	</div>
+</aside>

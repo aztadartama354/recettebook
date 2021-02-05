@@ -1,4 +1,102 @@
-baseURL = "http://example.org/"
+baseURL = "https://recettebook.vercel.app/"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+title = "meilleur du chef recette"
+theme = "x"
+sectionPagesMenu = "main"
+
+[taxonomies]
+  tag = "Recette"
+  category = "Recette"
+
+[permalinks]
+  post = "Recette"
+
+[params]
+  description = "Une collection de plus de 10000 recettes populaires pour votre guide de cuisine complet"
+  topdescription = "Une collection de plus de 10000 recettes populaires pour votre guide de cuisine complet"
+  toptitle = "meilleur du chef recette"
+  contentBackgroundColor = "#fff"
+  contentLinkColor = "#007bff"
+  contentLinkHoverColor = "#0056b3"
+  contentTextColor = "#212529"
+  cookieConsent = false
+  customBlockquoteStyle = true
+  customCodeStyle = true
+  customDateFormat = "Jan 2, 2006"
+  faviconMsApplicationTileColor = "#da532c"
+  faviconSafariPinnedTabColor = "#5bbad5"
+  faviconThemeColor = "#ffffff"
+  googleAnalytics = ""
+  includeBootstrapJs = true
+  navbarBackgroundColor = "#212529"
+  navbarLinkColor = "rgba(255, 255, 255, 0.75)"
+  navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
+  showPostSummary = false
+  wrapperMaxWidth = ""
+  mainSections = ["Recette"]
+  [params.social.share]
+    facebook = true
+    linkedin = true
+    twitter = true
+    whatsapp = true
+    email = true
+
+
+[menu]
+  [[menu.nav]]
+  name = "Home"
+  url = "/"
+  weight = 1
+  [[menu.nav]]
+  name = "Contact"
+  url = "/pages/contact"
+  weight = 2
+  [[menu.nav]]
+  name = "Copyright"
+  url = "/pages/copyright"
+  weight = 3
+  [[menu.nav]]
+  name = "DMCA"
+  url = "/pages/dmca"
+  weight = 4
+  [[menu.nav]]
+  name = "Privacy Policy"
+  url = "/pages/privacy-policy"
+  weight = 5
+
+[author]
+    name = "Admin"
+    homepage = "recettebook.vercel.app/"
+    bio = "Véritable Amateur de Nourriture"
+    image = "https://i.imgur.com/qNQv8nK.jpg"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xHTML = false
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 6
+    startLevel = 2
